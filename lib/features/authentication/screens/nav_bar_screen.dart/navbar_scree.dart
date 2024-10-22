@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:j_store/features/authentication/shop/screen/home.dart';
 import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';
-import 'package:j_store/utils/http/http_client.dart';
 
 class NavbarScreen extends StatelessWidget {
   const NavbarScreen({super.key});
@@ -44,9 +43,7 @@ class NavbarScreen extends StatelessWidget {
 class NavigationController extends GetxController {
   Rx<int> selectedIndex = 0.obs;
   final screen = [
-    Container(
-      color: Colors.red,
-    ),
+    HomeScreen(),
     Container(
       color: Colors.blue,
     ),
