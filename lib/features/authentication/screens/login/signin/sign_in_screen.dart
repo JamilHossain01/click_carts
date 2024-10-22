@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:j_store/common/styles/spacing_styles.dart';
 import 'package:j_store/common/styles/widgtes/common_fb_g_sign.dart';
 import 'package:j_store/common/styles/widgtes/tform_devider.dart';
-import 'package:j_store/utils/constants/colors.dart';
+import 'package:j_store/features/authentication/screens/login/signin/verify_email.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 import 'package:j_store/utils/constants/text_strings.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';
+
+import 'auth_inner_screen/widgets/text_spain.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -32,6 +35,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
               Text(
                 TTexts.signupTitle,
                 style: Theme.of(context).textTheme.headlineMedium,
+              ),
+              SizedBox(
+                height: TSizes.spaceBtwItems,
               ),
               Column(children: [
                 Row(
@@ -91,49 +97,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
               const SizedBox(
                 height: TSizes.spaceBtwItems,
               ),
-              Row(
-                children: [
-                  SizedBox(
-                    height: 24,
-                    width: 24,
-                    child: Checkbox(
-                      value: true,
-                      onChanged: (value) {},
-                    ),
-                  ),
-                  Text.rich(
-                    TextSpan(
-                      children: [
-                        const TextSpan(text: '${TTexts.iAgreeTo}'),
-                        TextSpan(
-                          text: ' ${TTexts.privacyPolicy}',
-                          style: Theme.of(context).textTheme.bodyMedium!.apply(
-                              color: dark ? TColors.white : TColors.primary,
-                              decoration: TextDecoration.underline,
-                              decorationColor:
-                                  dark ? TColors.white : TColors.primary),
-                        ),
-                        const TextSpan(text: " ${TTexts.and} "),
-                        TextSpan(
-                          text: TTexts.termsOfUse,
-                          style: Theme.of(context).textTheme.bodyMedium!.apply(
-                              color: TColors.primary,
-                              decoration: TextDecoration.underline,
-                              decorationColor:
-                                  dark ? TColors.white : TColors.primary),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
+              const TTexSpain(),
               const SizedBox(
                 height: TSizes.spaceBtwItems,
               ),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: const Text(TTexts.createAccount)),
+                    onPressed: () => Get.to(() => const VerifyEmailScreen()),
+                    child: const Text(TTexts.createAccount)),
               ),
               const Padding(
                 padding: TSpacingStyles.paddingWithAppBarHeight,

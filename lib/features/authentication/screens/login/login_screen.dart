@@ -4,7 +4,9 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:j_store/common/styles/spacing_styles.dart';
 import 'package:j_store/common/styles/widgtes/tform_devider.dart';
+import 'package:j_store/features/authentication/screens/login/signin/auth_inner_screen/forget_screen.dart';
 import 'package:j_store/features/authentication/screens/login/signin/sign_in_screen.dart';
+import 'package:j_store/features/authentication/screens/nav_bar_screen.dart/navbar_scree.dart';
 
 import 'package:j_store/utils/constants/image_strings.dart';
 import 'package:j_store/utils/constants/sizes.dart';
@@ -87,8 +89,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             ],
                           ),
                           TextButton(
-                              onPressed: () {},
-                              child: const Text(TTexts.forgetPassword))
+                            onPressed: () => Get.to(() => const ForgetScreen()),
+                            child: const Text(TTexts.forgetPassword),
+                          )
                         ],
                       ),
                       const SizedBox(
@@ -97,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       SizedBox(
                         width: double.infinity,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () => Get.to(() => const NavbarScreen()),
                           child: const Text(TTexts.signIn),
                         ),
                       ),
