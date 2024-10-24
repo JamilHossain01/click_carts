@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:j_store/common/images/t_rounded.dart';
 import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/circuler_container.dart';
+import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/trounded_conatiner.dart';
 import 'package:j_store/features/authentication/shop/controllers/home_controller.dart';
 import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/constants/image_strings.dart';
@@ -37,7 +38,7 @@ class TPromoCaroSlider extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 for (int i = 0; i < banners.length; i++)
-                  TCircularContainer(
+                  TRoundedContainer(
                     height: 4,
                     width: 20,
                     margin: EdgeInsets.only(right: 10),

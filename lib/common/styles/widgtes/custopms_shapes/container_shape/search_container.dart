@@ -12,11 +12,13 @@ class TSearchContainer extends StatelessWidget {
     required this.text,
     this.showBackround = true,
     this.showBorder = true,
+    this.padding = const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
   });
 
   final IconData? icons;
   final String text;
   final bool showBackround, showBorder;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,7 @@ class TSearchContainer extends StatelessWidget {
         context); // Assuming this is a method that checks dark mode
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+      padding: padding,
       child: Container(
         width: TDeviceUtils.getScreenWidth(context),
         padding: const EdgeInsets.all(TSizes.md),

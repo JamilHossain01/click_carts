@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:j_store/common/styles/widgtes/custopms_shapes/customp_appbar.dart';
+import 'package:j_store/common/styles/widgtes/appbar/customp_appbar.dart';
 import 'package:j_store/common/styles/widgtes/product.cart/cart_menue_icon.dart';
 import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/constants/text_strings.dart';

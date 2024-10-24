@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:j_store/features/authentication/shop/screen/home.dart';
+import 'package:j_store/features/authentication/shop/screen/shop_screen.dart';
 import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';
 
@@ -26,7 +27,7 @@ class NavbarScreen extends StatelessWidget {
               : TColors.black.withOpacity(0.1),
           destinations: const [
             NavigationDestination(icon: Icon(Iconsax.home), label: "Home"),
-            NavigationDestination(icon: Icon(Iconsax.shop), label: "Store"),
+            NavigationDestination(icon: Icon(Iconsax.shop), label: "Shope"),
             NavigationDestination(
                 icon: Icon(Iconsax.heart), label: "Favourite"),
             NavigationDestination(icon: Icon(Iconsax.user), label: "profile")
@@ -44,9 +45,7 @@ class NavigationController extends GetxController {
   Rx<int> selectedIndex = 0.obs;
   final screen = [
     HomeScreen(),
-    Container(
-      color: Colors.blue,
-    ),
+    ShopScreen(),
     Container(
       color: Colors.green,
     ),
