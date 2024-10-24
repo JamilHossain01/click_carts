@@ -1,25 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:j_store/utils/constants/colors.dart';
+import 'package:j_store/utils/constants/sizes.dart';
 
 class TCircularContainer extends StatelessWidget {
   const TCircularContainer({
     super.key,
-    this.height = 400,
-    this.width = 400,
-    this.radius = 400,
-    this.padding = 0,
+    this.height,
+    this.width,
+    this.radius = TSizes.cardRadiusLg,
+    this.padding,
     this.child,
     this.backgroundColor = TColors.white,
     this.margin,
   });
 
-  final double height;
-  final double width;
+  final double? height;
+  final double? width;
   final double radius;
-  final double padding;
+
   final Widget? child;
   final Color backgroundColor;
   final EdgeInsets? margin;
+  final EdgeInsets? padding;
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +29,7 @@ class TCircularContainer extends StatelessWidget {
       height: height,
       width: width,
       margin: margin,
+      padding: padding,
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(radius),
