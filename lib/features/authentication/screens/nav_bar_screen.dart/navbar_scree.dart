@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:j_store/features/authentication/screens/profile_screen/screen/setting.dart';
+import 'package:j_store/features/authentication/screens/wishlist/wishlist.dart';
 import 'package:j_store/features/authentication/shop/screen/home.dart';
 import 'package:j_store/features/authentication/shop/screen/shop_screen.dart';
 import 'package:j_store/utils/constants/colors.dart';
@@ -44,13 +46,10 @@ class NavbarScreen extends StatelessWidget {
 class NavigationController extends GetxController {
   Rx<int> selectedIndex = 0.obs;
   final screen = [
-    HomeScreen(),
-    ShopScreen(),
-    Container(
-      color: Colors.green,
-    ),
-    Container(
-      color: Colors.amber,
-    )
+    const HomeScreen(),
+    const ShopScreen(),
+    // ignore: prefer_const_constructors
+    FavouriteScreen(),
+    const SettingScreen()
   ];
 }

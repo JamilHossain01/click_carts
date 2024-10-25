@@ -36,7 +36,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 TTexts.signupTitle,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.spaceBtwItems,
               ),
               Column(children: [

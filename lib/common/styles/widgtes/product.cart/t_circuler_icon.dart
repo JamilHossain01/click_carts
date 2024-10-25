@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:j_store/utils/constants/colors.dart';
 
-class TCartCounterIcon extends StatelessWidget {
-  const TCartCounterIcon({
+class TCarCirculerIcon extends StatelessWidget {
+  const TCarCirculerIcon({
     super.key,
     this.iconColors,
     required this.onPressed,
@@ -23,26 +23,6 @@ class TCartCounterIcon extends StatelessWidget {
         IconButton(
           onPressed: onPressed,
           icon: Icon(icon, color: iconColors ?? TColors.primary),
-        ),
-        Positioned(
-          right: 0,
-          child: Container(
-            height: 20,
-            width: 20,
-            decoration: const BoxDecoration(
-              color: Colors.black,
-              shape: BoxShape.circle,
-            ),
-            child: Center(
-              child: Text(
-                text,
-                style: Theme.of(context)
-                    .textTheme
-                    .labelMedium!
-                    .apply(color: TColors.white),
-              ),
-            ),
-          ),
         ),
       ],
     );

@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:j_store/common/styles/spacing_styles.dart';
 import 'package:j_store/features/authentication/screens/login/login_screen.dart';
 import 'package:j_store/utils/constants/image_strings.dart';
@@ -21,7 +20,7 @@ class RessetPass extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () => Get.offAll(() => const LoginScreen()),
-            icon: Icon(CupertinoIcons.clear),
+            icon: const Icon(CupertinoIcons.clear),
           ),
         ],
       ),
@@ -32,7 +31,7 @@ class RessetPass extends StatelessWidget {
             children: [
               Image(
                 width: THelperFunctions.screenWidth() * .6,
-                image: AssetImage(TImages.deliveredEmailIllustration),
+                image: const AssetImage(TImages.deliveredEmailIllustration),
               ),
               const SizedBox(
                   height: TSizes
@@ -65,13 +64,13 @@ class RessetPass extends StatelessWidget {
                       TTexts.done,
                     )),
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.spaceBtwItems,
               ),
               SizedBox(
                   width: double.infinity,
                   child: TextButton(
-                      onPressed: () {}, child: Text(TTexts.resendEmail)))
+                      onPressed: () {}, child: const Text(TTexts.resendEmail)))
             ],
           ),
         ),

@@ -1,9 +1,6 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:j_store/common/images/t_rounded.dart';
 import 'package:j_store/common/styles/widgtes/layout/grid_layout.dart';
 import 'package:j_store/common/styles/widgtes/product_card/cart/product_cart_horizontal.dart';
-import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/circuler_container.dart';
 import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/curve_edge_conatiner_widgets.dart';
 import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/search_container.dart';
 import 'package:j_store/common/styles/widgtes/images_text_widgets/vertical_image_text.dart';
@@ -13,7 +10,6 @@ import 'package:j_store/features/authentication/shop/screen/widgets/t_promo_slid
 import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/constants/image_strings.dart';
 import 'package:j_store/utils/constants/sizes.dart';
-import 'package:j_store/utils/helpers/helper_functions.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/colors.dart';
@@ -21,9 +20,9 @@ class TSocialButton extends StatelessWidget {
               border: Border.all(color: TColors.grey),
               borderRadius: BorderRadius.circular(100)),
           child: IconButton(
-              onPressed: () {}, icon: Image(image: AssetImage(TImages.google))),
+              onPressed: () {}, icon: const Image(image: AssetImage(TImages.google))),
         ),
-        SizedBox(
+        const SizedBox(
           width: TSizes.spaceBtwInputFields,
         ),
         Container(
@@ -33,7 +32,7 @@ class TSocialButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(100)),
           child: IconButton(
               onPressed: () {},
-              icon: Image(image: AssetImage(TImages.facebook))),
+              icon: const Image(image: AssetImage(TImages.facebook))),
         ),
       ],
     );

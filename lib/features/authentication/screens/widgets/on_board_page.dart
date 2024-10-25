@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';
 

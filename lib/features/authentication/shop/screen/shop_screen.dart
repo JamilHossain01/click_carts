@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:j_store/common/styles/widgtes/appbar/appbar.dart';
 import 'package:j_store/common/styles/widgtes/bands/barnd_card.dart';
-import 'package:j_store/common/styles/widgtes/bands/bran_show.dart';
 import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/search_container.dart';
 import 'package:j_store/common/styles/widgtes/appbar/customp_appbar.dart';
 import 'package:j_store/common/styles/widgtes/layout/grid_layout.dart';
 import 'package:j_store/common/styles/widgtes/product.cart/cart_menue_icon.dart';
-import 'package:j_store/common/styles/widgtes/product_card/cart/product_cart_horizontal.dart';
 import 'package:j_store/common/styles/widgtes/texts/section_heading.dart';
+import 'package:j_store/features/authentication/shop/screen/widgets/t_category_tab.dart';
 import 'package:j_store/utils/constants/colors.dart';
-import 'package:j_store/utils/constants/image_strings.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';
 
@@ -96,109 +94,13 @@ class ShopScreen extends StatelessWidget {
           },
           // ignore: prefer_const_constructors
           body: TabBarView(
+            // ignore: prefer_const_literals_to_create_immutables
             children: [
-              Padding(
-                  padding: const EdgeInsets.all(
-                      TSizes.defaultSpace), // Add 'const' for optimization
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        const TBrandShow(images: [
-                          TImages.productImage1,
-                          TImages.productImage2,
-                          TImages.productImage3
-                        ]),
-                        const TBrandShow(images: [
-                          TImages.productImage4,
-                          TImages.productImage5,
-                          TImages.productImage6
-                        ]),
-                        const TSectionHeading(title: 'You might also like'),
-                        TGridLayout(
-                          itemCount: 6,
-                          itemBuilder: (context, index) {
-                            return const TProductCart();
-                          },
-                        )
-                      ],
-                    ),
-                  )),
-              const Padding(
-                  padding: EdgeInsets.all(
-                      TSizes.defaultSpace), // Add 'const' for optimization
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        TBrandShow(images: [
-                          TImages.productImage1,
-                          TImages.productImage2,
-                          TImages.productImage3
-                        ]),
-                        TBrandShow(images: [
-                          TImages.productImage4,
-                          TImages.productImage5,
-                          TImages.productImage6
-                        ]),
-                      ],
-                    ),
-                  )),
-              const Padding(
-                  padding: EdgeInsets.all(
-                      TSizes.defaultSpace), // Add 'const' for optimization
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        TBrandShow(images: [
-                          TImages.productImage1,
-                          TImages.productImage2,
-                          TImages.productImage3
-                        ]),
-                        TBrandShow(images: [
-                          TImages.productImage4,
-                          TImages.productImage5,
-                          TImages.productImage6
-                        ]),
-                      ],
-                    ),
-                  )),
-              const Padding(
-                  padding: EdgeInsets.all(
-                      TSizes.defaultSpace), // Add 'const' for optimization
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        TBrandShow(images: [
-                          TImages.productImage1,
-                          TImages.productImage2,
-                          TImages.productImage3
-                        ]),
-                        TBrandShow(images: [
-                          TImages.productImage4,
-                          TImages.productImage5,
-                          TImages.productImage6
-                        ]),
-                      ],
-                    ),
-                  )),
-              const Padding(
-                  padding: EdgeInsets.all(
-                      TSizes.defaultSpace), // Add 'const' for optimization
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        TBrandShow(images: [
-                          TImages.productImage1,
-                          TImages.productImage2,
-                          TImages.productImage3
-                        ]),
-                        TBrandShow(images: [
-                          TImages.productImage4,
-                          TImages.productImage5,
-                          TImages.productImage6
-                        ]),
-                      ],
-                    ),
-                  )),
+              const TCategoryTab(),
+              const TCategoryTab(),
+              const TCategoryTab(),
+              const TCategoryTab(),
+              const TCategoryTab(),
             ],
           ),
         ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';
@@ -54,7 +53,7 @@ class TcerticalEmageText extends StatelessWidget {
                 title,
                 maxLines: 1, // Limiting to 1 line
                 overflow: TextOverflow.ellipsis, // Overflow if the text exceeds
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.black,
                 ),
               ),

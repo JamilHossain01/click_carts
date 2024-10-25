@@ -2,11 +2,9 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:j_store/common/images/t_rounded.dart';
-import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/circuler_container.dart';
 import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/trounded_conatiner.dart';
 import 'package:j_store/features/authentication/shop/controllers/home_controller.dart';
 import 'package:j_store/utils/constants/colors.dart';
-import 'package:j_store/utils/constants/image_strings.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 
 class TPromoCaroSlider extends StatelessWidget {
@@ -29,7 +27,7 @@ class TPromoCaroSlider extends StatelessWidget {
               autoPlay: false,
               viewportFraction: 1),
         ),
-        SizedBox(
+        const SizedBox(
           height: TSizes.spaceBtwItems,
         ),
         Center(
@@ -41,7 +39,7 @@ class TPromoCaroSlider extends StatelessWidget {
                   TRoundedContainer(
                     height: 4,
                     width: 20,
-                    margin: EdgeInsets.only(right: 10),
+                    margin: const EdgeInsets.only(right: 10),
                     backgroundColor: controller.carouselCurrentIndex.value == i
                         ? TColors.primary
                         : TColors.grey,

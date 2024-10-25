@@ -25,7 +25,7 @@ class TTexSpain extends StatelessWidget {
         Text.rich(
           TextSpan(
             children: [
-              const TextSpan(text: '${TTexts.iAgreeTo}'),
+              const TextSpan(text: TTexts.iAgreeTo),
               TextSpan(
                 text: ' ${TTexts.privacyPolicy}',
                 style: Theme.of(context).textTheme.bodyMedium!.apply(

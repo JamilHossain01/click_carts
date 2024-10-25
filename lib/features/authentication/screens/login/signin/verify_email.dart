@@ -19,7 +19,7 @@ class VerifyEmailScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
-            onPressed: () => Get.offAll(() => LoginScreen()),
+            onPressed: () => Get.offAll(() => const LoginScreen()),
             icon: const Icon(CupertinoIcons.clear),
           ),
         ],
@@ -37,18 +37,18 @@ class VerifyEmailScreen extends StatelessWidget {
                 TTexts.confirmEmail,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
-              SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems),
               Text(
                 "jamisl@gmail.com", // Corrected the email typo
                 style: Theme.of(context).textTheme.labelLarge,
               ),
-              SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems),
               Text(
                 TTexts.confirmEmailSubTitle,
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
@@ -56,17 +56,17 @@ class VerifyEmailScreen extends StatelessWidget {
                         image: TImages.staticSuccessIllustration,
                         title: TTexts.yourAccountCreatedTitle,
                         subtitle: TTexts.yourAccountCreatedSubTitle,
-                        onPressed: () => Get.to(() => LoginScreen()),
+                        onPressed: () => Get.to(() => const LoginScreen()),
                       )),
-                  child: Text(TTexts.tContinue),
+                  child: const Text(TTexts.tContinue),
                 ),
               ),
-              SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems),
               SizedBox(
                 width: double.infinity,
                 child: TextButton(
                   onPressed: () {},
-                  child: Text(TTexts.resendEmail),
+                  child: const Text(TTexts.resendEmail),
                 ),
               ),
             ],

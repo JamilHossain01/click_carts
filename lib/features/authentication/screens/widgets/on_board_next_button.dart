@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:j_store/features/authentication/controllers.onboarding/onboarding_controller.dart';
 import 'package:j_store/utils/constants/colors.dart';
@@ -23,7 +22,7 @@ class OnBoardingNextButton extends StatelessWidget {
             shape: const CircleBorder(),
             backgroundColor: dark ? TColors.primary : TColors.black),
         onPressed: () => OnboardingController.instance.nextPage(),
-        child: Icon(Iconsax.arrow_right_3),
+        child: const Icon(Iconsax.arrow_right_3),
       ),
     );
   }

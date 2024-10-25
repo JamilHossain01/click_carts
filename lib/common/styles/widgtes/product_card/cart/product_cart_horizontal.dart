@@ -7,9 +7,7 @@ import 'package:j_store/common/styles/widgtes/product.cart/product_cart_heart_co
 import 'package:j_store/common/styles/widgtes/product.cart/product_cart_tittle_text.dart';
 import 'package:j_store/common/styles/widgtes/texts/product_price_text.dart';
 import 'package:j_store/common/styles/widgtes/texts/t_brand_text_with_verfied_icon.dart';
-import 'package:j_store/common/styles/widgtes/texts/t_branded_tittle.dart';
 import 'package:j_store/utils/constants/colors.dart';
-import 'package:j_store/utils/constants/enums.dart';
 import 'package:j_store/utils/constants/image_strings.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';
@@ -73,7 +71,7 @@ class TProductCart extends StatelessWidget {
                 const SizedBox(
                   height: TSizes.spaceBtwItems / 2,
                 ),
-                TBraandTitleWithverificationIcon(
+                const TBraandTitleWithverificationIcon(
                   icon: Iconsax.verify5,
                   title: 'Nike',
                 ),

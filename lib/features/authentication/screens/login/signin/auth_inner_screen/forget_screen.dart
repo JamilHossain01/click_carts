@@ -8,7 +8,6 @@ import 'package:j_store/features/authentication/screens/login/login_screen.dart'
 import 'package:j_store/features/authentication/screens/login/signin/auth_inner_screen/widgets/resset_pass.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 import 'package:j_store/utils/constants/text_strings.dart';
-import 'package:j_store/utils/helpers/helper_functions.dart';
 
 class ForgetScreen extends StatelessWidget {
   const ForgetScreen({super.key});

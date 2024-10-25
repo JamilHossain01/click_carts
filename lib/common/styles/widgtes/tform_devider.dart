@@ -1,5 +1,4 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';
 
@@ -27,7 +26,7 @@ class TFormDivider extends StatelessWidget {
             endIndent: 5,
           ),
         ),
-        Text(TTexts.orSignInWith),
+        const Text(TTexts.orSignInWith),
         Flexible(
           child: Divider(
             color: dark ? TColors.grey : TColors.darkGrey,
