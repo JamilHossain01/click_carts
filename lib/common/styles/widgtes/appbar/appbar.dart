@@ -3,22 +3,25 @@ import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/device/device_utility.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';
 
-class TTabbarView extends StatelessWidget implements PreferredSizeWidget {
-  const TTabbarView({
+class TTabBar extends StatelessWidget implements PreferredSizeWidget {
+  const TTabBar({
     super.key,
-    required this.tab,
+    required this.tabs,
   });
-  final List<Widget> tab;
+  final List<Widget> tabs;
 
   @override
   Widget build(BuildContext context) {
-    return TabBar(
-      indicatorColor: TColors.primary,
-      unselectedLabelColor: TColors.darkerGrey,
-      labelColor:
-          THelperFunctions.isDarkMode(context) ? TColors.white : TColors.dark,
-      isScrollable: true,
-      tabs: tab,
+    final dark = THelperFunctions.isDarkMode(context);
+    return Material(
+      color: dark ? TColors.black : TColors.white,
+      child: TabBar(
+        indicatorColor: TColors.primary,
+        unselectedLabelColor: TColors.darkerGrey,
+        labelColor: dark ? TColors.white : TColors.dark,
+        isScrollable: true,
+        tabs: tabs,
+      ),
     );
   }
 
