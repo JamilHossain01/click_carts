@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/instance_manager.dart';
 import 'package:j_store/features/authentication/controllers.onboarding/onboarding_controller.dart';
-import 'package:j_store/features/authentication/screens/widgets/my_smoth_page_indicator.dart';
-import 'package:j_store/features/authentication/screens/widgets/on_baord_skip.dart';
-import 'package:j_store/features/authentication/screens/widgets/on_board_next_button.dart';
-import 'package:j_store/features/authentication/screens/widgets/on_board_page.dart';
+import 'package:j_store/features/screens/widgets/my_smoth_page_indicator.dart';
+import 'package:j_store/features/screens/widgets/on_baord_skip.dart';
+import 'package:j_store/features/screens/widgets/on_board_next_button.dart';
+import 'package:j_store/features/screens/widgets/on_board_page.dart';
 import 'package:j_store/utils/constants/image_strings.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 import 'package:j_store/utils/constants/text_strings.dart';

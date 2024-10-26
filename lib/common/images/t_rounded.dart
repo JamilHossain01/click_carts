@@ -40,6 +40,8 @@ class TRoundImage extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(TSizes.md),
           child: Image(
+            height: hight,
+            width: widht,
             image: isNetWorkImage
                 ? NetworkImage(imageUrl)
                 : AssetImage(imageUrl) as ImageProvider,

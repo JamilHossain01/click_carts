@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:j_store/common/styles/widgtes/loging_signUp/succes_screen.dart';
 
-import 'package:j_store/features/authentication/screens/login/login_screen.dart';
+import 'package:j_store/features/screens/login/login_screen.dart';
 import 'package:j_store/utils/constants/image_strings.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 import 'package:j_store/utils/constants/text_strings.dart';

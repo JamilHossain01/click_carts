@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:j_store/common/styles/widgtes/appbar/customp_appbar.dart';
 import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/curve_edge_conatiner_widgets.dart';
 import 'package:j_store/common/styles/widgtes/list_tile/t_seting_menue_item.dart';
 import 'package:j_store/common/styles/widgtes/list_tile/t_user_tile.dart';
 import 'package:j_store/common/styles/widgtes/texts/section_heading.dart';
+import 'package:j_store/features/screens/profile_screen/screen/profile_edit.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 // ignore: unused_import
 import 'package:j_store/utils/constants/text_strings.dart';
@@ -14,24 +16,26 @@ class SettingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             TPrimaryHeaderContainer(
               child: Column(
                 children: [
-                  TAppBar(
+                  const TAppBar(
                     title: Text('Account'),
                   ),
-                  TUserProfileTile(),
-                  SizedBox(
+                  TUserProfileTile(
+                    onPressed: () => Get.to(const ProfileEditScreen()),
+                  ),
+                  const SizedBox(
                     height: TSizes.spaceBtwSections,
                   ),
                 ],
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [

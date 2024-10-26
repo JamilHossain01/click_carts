@@ -4,7 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:j_store/common/styles/spacing_styles.dart';
 import 'package:j_store/common/styles/widgtes/common_fb_g_sign.dart';
 import 'package:j_store/common/styles/widgtes/tform_devider.dart';
-import 'package:j_store/features/authentication/screens/login/signin/verify_email.dart';
+import 'package:j_store/features/screens/login/signin/verify_email.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 import 'package:j_store/utils/constants/text_strings.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';

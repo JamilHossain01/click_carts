@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:j_store/features/authentication/screens/profile_screen/screen/setting.dart';
-import 'package:j_store/features/authentication/screens/wishlist/wishlist.dart';
+import 'package:j_store/features/screens/profile_screen/screen/setting.dart';
+import 'package:j_store/features/screens/wishlist/wishlist.dart';
 import 'package:j_store/features/authentication/shop/screen/home.dart';
 import 'package:j_store/features/authentication/shop/screen/shop_screen.dart';
 import 'package:j_store/utils/constants/colors.dart';

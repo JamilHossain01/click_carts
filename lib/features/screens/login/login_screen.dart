@@ -3,16 +3,16 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:j_store/common/styles/spacing_styles.dart';
 import 'package:j_store/common/styles/widgtes/tform_devider.dart';
-import 'package:j_store/features/authentication/screens/login/signin/auth_inner_screen/forget_screen.dart';
-import 'package:j_store/features/authentication/screens/login/signin/sign_in_screen.dart';
-import 'package:j_store/features/authentication/screens/nav_bar_screen.dart/navbar_scree.dart';
+import 'package:j_store/features/screens/login/signin/auth_inner_screen/forget_screen.dart';
+import 'package:j_store/features/screens/login/signin/sign_in_screen.dart';
+import 'package:j_store/features/screens/nav_bar_screen.dart/navbar_scree.dart';
 
 import 'package:j_store/utils/constants/image_strings.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 import 'package:j_store/utils/constants/text_strings.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';
 
-import '../../../../common/styles/widgtes/common_fb_g_sign.dart';
+import '../../../common/styles/widgtes/common_fb_g_sign.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
