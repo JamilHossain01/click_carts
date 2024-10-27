@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:j_store/common/images/t_rounded.dart';
+import 'package:j_store/common/styles/widgtes/chips/t_choice_chip.dart';
+import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/circuler_container.dart';
 import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/discount_conatiner.dart';
 import 'package:j_store/common/styles/widgtes/product.cart/product_cart_tittle_text.dart';
 import 'package:j_store/common/styles/widgtes/texts/product_price_text.dart';
 import 'package:j_store/common/styles/widgtes/texts/section_heading.dart';
 import 'package:j_store/common/styles/widgtes/texts/t_brand_text_with_verfied_icon.dart';
+import 'package:j_store/features/screens/product_details/widgets/product_attributes.dart';
 import 'package:j_store/features/screens/product_details/widgets/product_image_slider.dart';
 import 'package:j_store/features/screens/product_details/widgets/t_rating_share.dart';
 import 'package:j_store/utils/constants/colors.dart';
@@ -72,9 +76,100 @@ class ProductDetailsScreen extends StatelessWidget {
                           widht: 20,
                           imageUrl: TImages.clothIcon),
                       const TBraandTitleWithverificationIcon(
-                          title: 'Nike', icon: Iconsax.verify5)
+                          title: 'Nike', icon: Iconsax.verify5),
                     ],
-                  )
+                  ),
+                  const SizedBox(
+                    height: TSizes.spaceBtwItems / 1.5,
+                  ),
+                  const TProductAttributes(),
+                  const SizedBox(
+                    height: TSizes.spaceBtwItems,
+                  ),
+                  const Column(
+                    children: [
+                      TSectionHeading(
+                        title: 'Colors',
+                        showActionButton: false,
+                      )
+                    ],
+                  ),
+                  Wrap(
+                    children: [
+                      TChoiceChip(
+                        text: 'Green',
+                        selected: true,
+                        onSelected: (value) {},
+                      ),
+                      TChoiceChip(
+                        text: 'Blue',
+                        selected: false,
+                        onSelected: (value) {},
+                      ),
+                      TChoiceChip(
+                        text: 'Red',
+                        selected: false,
+                        onSelected: (value) {},
+                      ),
+                      TChoiceChip(
+                        text: 'Yellow',
+                        selected: true,
+                        onSelected: (value) {},
+                      ),
+                      TChoiceChip(
+                        text: 'Black',
+                        selected: true,
+                        onSelected: (value) {},
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: TSizes.spaceBtwItems,
+                  ),
+                  TSectionHeading(
+                    title: 'Size',
+                    showActionButton: false,
+                  ),
+                  Wrap(
+                    spacing: 5,
+                    children: [
+                      TChoiceChip(
+                        text: 'EU 34',
+                        selected: true,
+                        onSelected: (value) {},
+                      ),
+                      TChoiceChip(
+                        text: 'EU 36',
+                        selected: false,
+                        onSelected: (value) {},
+                      ),
+                      TChoiceChip(
+                        text: 'EU 38',
+                        selected: false,
+                        onSelected: (value) {},
+                      ),
+                      TChoiceChip(
+                        text: 'EU 36',
+                        selected: false,
+                        onSelected: (value) {},
+                      ),
+                      TChoiceChip(
+                        text: 'EU 38',
+                        selected: true,
+                        onSelected: (value) {},
+                      ),
+                      TChoiceChip(
+                        text: 'EU 36',
+                        selected: false,
+                        onSelected: (value) {},
+                      ),
+                      TChoiceChip(
+                        text: 'EU 38',
+                        selected: true,
+                        onSelected: (value) {},
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
