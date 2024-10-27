@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:j_store/common/images/t_rounded.dart';
 import 'package:j_store/common/styles/widgtes/chips/t_choice_chip.dart';
-import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/circuler_container.dart';
 import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/discount_conatiner.dart';
 import 'package:j_store/common/styles/widgtes/product.cart/product_cart_tittle_text.dart';
 import 'package:j_store/common/styles/widgtes/texts/product_price_text.dart';
 import 'package:j_store/common/styles/widgtes/texts/section_heading.dart';
 import 'package:j_store/common/styles/widgtes/texts/t_brand_text_with_verfied_icon.dart';
+import 'package:j_store/features/screens/product_details/widgets/bottom_addto_cart.dart';
 import 'package:j_store/features/screens/product_details/widgets/product_attributes.dart';
 import 'package:j_store/features/screens/product_details/widgets/product_image_slider.dart';
 import 'package:j_store/features/screens/product_details/widgets/t_rating_share.dart';
@@ -16,6 +15,7 @@ import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/constants/image_strings.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';
+import 'package:readmore/readmore.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
   const ProductDetailsScreen({super.key});
@@ -24,6 +24,7 @@ class ProductDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
+      bottomNavigationBar: TBottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -168,6 +169,42 @@ class ProductDetailsScreen extends StatelessWidget {
                         selected: true,
                         onSelected: (value) {},
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: TSizes.spaceBtwItems / 0.7,
+                  ),
+                  SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton(
+                          onPressed: () {}, child: Text('Checkout'))),
+                  SizedBox(
+                    height: TSizes.spaceBtwItems,
+                  ),
+                  TSectionHeading(
+                    title: 'Description',
+                    showActionButton: false,
+                  ),
+                  ReadMoreText(
+                    'Stay warm and stylish with our premium jacket, crafted from high-quality, breathable materials. Ideal for both casual outings and active wear, this jacket combines comfort with modern design. Available in multiple colors, it’s the perfect addition to any wardrobe',
+                    trimMode: TrimMode.Line,
+                    trimLines: 2,
+                    colorClickableText: Colors.pink,
+                    trimCollapsedText: 'Show more',
+                    trimExpandedText: 'Show less',
+                    moreStyle:
+                        TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
+                  ),
+                  Divider(),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      TSectionHeading(
+                        title: 'Reviews(199)',
+                        showActionButton: false,
+                      ),
+                      IconButton(
+                          onPressed: () {}, icon: Icon(Iconsax.arrow_right_3))
                     ],
                   ),
                 ],
