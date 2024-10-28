@@ -3,7 +3,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:j_store/common/images/t_circuler_image.dart';
 import 'package:j_store/common/styles/widgtes/appbar/customp_appbar.dart';
 import 'package:j_store/common/styles/widgtes/texts/section_heading.dart';
-import 'package:j_store/features/screens/profile_screen/screen/widgets/profile_menue.dart';
+import 'package:j_store/features/personailization/screen/profile/widgets/profile_menue.dart';
 // ignore: unused_import
 import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/constants/image_strings.dart';

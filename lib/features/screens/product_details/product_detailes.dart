@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:j_store/common/images/t_rounded.dart';
 import 'package:j_store/common/styles/widgtes/chips/t_choice_chip.dart';
@@ -7,6 +8,7 @@ import 'package:j_store/common/styles/widgtes/product.cart/product_cart_tittle_t
 import 'package:j_store/common/styles/widgtes/texts/product_price_text.dart';
 import 'package:j_store/common/styles/widgtes/texts/section_heading.dart';
 import 'package:j_store/common/styles/widgtes/texts/t_brand_text_with_verfied_icon.dart';
+import 'package:j_store/features/screens/product_details/product_reviews/product_review.dart';
 import 'package:j_store/features/screens/product_details/widgets/bottom_addto_cart.dart';
 import 'package:j_store/features/screens/product_details/widgets/product_attributes.dart';
 import 'package:j_store/features/screens/product_details/widgets/product_image_slider.dart';
@@ -24,7 +26,7 @@ class ProductDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
-      bottomNavigationBar: TBottomAddToCart(),
+      bottomNavigationBar: const TBottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -124,10 +126,10 @@ class ProductDetailsScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: TSizes.spaceBtwItems,
                   ),
-                  TSectionHeading(
+                  const TSectionHeading(
                     title: 'Size',
                     showActionButton: false,
                   ),
@@ -171,21 +173,21 @@ class ProductDetailsScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: TSizes.spaceBtwItems / 0.7,
                   ),
                   SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                          onPressed: () {}, child: Text('Checkout'))),
-                  SizedBox(
+                          onPressed: () {}, child: const Text('Checkout'))),
+                  const SizedBox(
                     height: TSizes.spaceBtwItems,
                   ),
-                  TSectionHeading(
+                  const TSectionHeading(
                     title: 'Description',
                     showActionButton: false,
                   ),
-                  ReadMoreText(
+                  const ReadMoreText(
                     'Stay warm and stylish with our premium jacket, crafted from high-quality, breathable materials. Ideal for both casual outings and active wear, this jacket combines comfort with modern design. Available in multiple colors, it’s the perfect addition to any wardrobe',
                     trimMode: TrimMode.Line,
                     trimLines: 2,
@@ -195,16 +197,18 @@ class ProductDetailsScreen extends StatelessWidget {
                     moreStyle:
                         TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
                   ),
-                  Divider(),
+                  const Divider(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      TSectionHeading(
+                      const TSectionHeading(
                         title: 'Reviews(199)',
                         showActionButton: false,
                       ),
                       IconButton(
-                          onPressed: () {}, icon: Icon(Iconsax.arrow_right_3))
+                          onPressed: () =>
+                              Get.to(() => const ProductReviewScreen()),
+                          icon: const Icon(Iconsax.arrow_right_3))
                     ],
                   ),
                 ],

@@ -6,7 +6,8 @@ import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/cu
 import 'package:j_store/common/styles/widgtes/list_tile/t_seting_menue_item.dart';
 import 'package:j_store/common/styles/widgtes/list_tile/t_user_tile.dart';
 import 'package:j_store/common/styles/widgtes/texts/section_heading.dart';
-import 'package:j_store/features/screens/profile_screen/screen/profile_edit.dart';
+import 'package:j_store/features/personailization/screen/adsress/address.dart';
+import 'package:j_store/features/personailization/screen/profile/profile_edit.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 // ignore: unused_import
 import 'package:j_store/utils/constants/text_strings.dart';
@@ -35,46 +36,47 @@ class SettingScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.all(TSizes.defaultSpace),
+            Padding(
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [
-                  TSectionHeading(
+                  const TSectionHeading(
                     title: 'Account Setting',
                     showActionButton: false,
                   ),
                   TSettingMenueItem(
                       title: 'My Adress',
                       subTitle: 'Set shopping delivery addres',
+                      onTap: () => Get.to((() => const UserAdressScreen())),
                       icon: Iconsax.safe_home),
-                  TSettingMenueItem(
+                  const TSettingMenueItem(
                       title: 'My Cart',
                       subTitle: 'Add, remove prodeucts and move to checkout',
                       icon: Iconsax.shopping_cart),
-                  TSettingMenueItem(
+                  const TSettingMenueItem(
                       title: 'My orders',
                       subTitle: 'In-progress and Completed \n orders',
                       icon: Iconsax.bag_tick),
-                  TSettingMenueItem(
+                  const TSettingMenueItem(
                       title: 'Bank Account',
                       subTitle: 'Withdrawal and deposit',
                       icon: Iconsax.bank),
-                  TSettingMenueItem(
+                  const TSettingMenueItem(
                       title: 'My Cuppons',
                       subTitle: 'List of all available coupons',
                       icon: Iconsax.notification),
-                  TSettingMenueItem(
+                  const TSettingMenueItem(
                       title: 'Account Privacy',
                       subTitle: 'Manage data usage and connection account',
                       icon: Iconsax.security_card),
-                  SizedBox(
+                  const SizedBox(
                     height: TSizes.spaceBtwSections,
                   ),
-                  TSectionHeading(
+                  const TSectionHeading(
                     title: 'App Setting',
                     showActionButton: false,
                   ),
-                  TSettingMenueItem(
+                  const TSettingMenueItem(
                       title: 'LOad data',
                       subTitle: 'Upload data to your Cloud Firbase',
                       icon: Iconsax.document_upload)
