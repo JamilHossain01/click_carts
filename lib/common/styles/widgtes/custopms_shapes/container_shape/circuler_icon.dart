@@ -9,14 +9,11 @@ class TCircularIcon extends StatelessWidget {
     this.backroundColor,
     this.color,
     this.onTap,
-    this.iconSize,
   });
-
   final double? height, width;
   final Color? color, backroundColor;
   final IconData? icon;
   final VoidCallback? onTap;
-  final double? iconSize;
 
   @override
   Widget build(BuildContext context) {
@@ -29,12 +26,9 @@ class TCircularIcon extends StatelessWidget {
           color: backroundColor,
           shape: BoxShape.circle,
         ),
-        child: Center(
-          child: Icon(
-            icon,
-            color: color,
-            size: iconSize,
-          ),
+        child: Icon(
+          icon,
+          color: color,
         ),
       ),
     );

@@ -15,7 +15,7 @@ class TRoundImage extends StatelessWidget {
       this.padding,
       this.onPressd,
       this.borderRadius = TSizes.md,
-      this.backgroundColor = TColors.light});
+      this.backgroundColor = TColors.darkGrey});
   final double? hight, widht;
   final String imageUrl;
   final bool isNetWorkImage;
@@ -31,21 +31,26 @@ class TRoundImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onPressd,
-      child: Container(
-        decoration: BoxDecoration(
+      child: Padding(
+        padding: padding ?? EdgeInsets.zero,
+        child: Container(
+          decoration: BoxDecoration(
+            color: backgroundColor,
             border: border,
             borderRadius: applyImageRadius
                 ? BorderRadius.circular(borderRadius)
-                : BorderRadius.zero),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(TSizes.md),
-          child: Image(
-            height: hight,
-            width: widht,
-            image: isNetWorkImage
-                ? NetworkImage(imageUrl)
-                : AssetImage(imageUrl) as ImageProvider,
-            fit: fit,
+                : BorderRadius.zero,
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(TSizes.md),
+            child: Image(
+              height: hight,
+              width: widht,
+              image: isNetWorkImage
+                  ? NetworkImage(imageUrl)
+                  : AssetImage(imageUrl) as ImageProvider,
+              fit: fit,
+            ),
           ),
         ),
       ),

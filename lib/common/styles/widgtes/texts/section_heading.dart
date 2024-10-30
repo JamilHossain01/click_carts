@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:j_store/utils/constants/colors.dart';
+import 'package:j_store/utils/helpers/helper_functions.dart';
 
 class TSectionHeading extends StatelessWidget {
   const TSectionHeading({
@@ -17,6 +19,7 @@ class TSectionHeading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = THelperFunctions.isDarkMode(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -32,8 +35,10 @@ class TSectionHeading extends StatelessWidget {
         if (showActionButton)
           TextButton(
             onPressed: onPressed,
-            child: Text(
-                buttonTitle), // Use the buttonTitle passed in the constructor
+            child: Text(buttonTitle,
+                style: TextStyle(
+                  color: dark ? TColors.textWhite : TColors.textPrimary,
+                )), // Use the buttonTitle passed in the constructor
           ),
       ],
     );

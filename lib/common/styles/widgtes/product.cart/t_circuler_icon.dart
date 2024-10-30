@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:j_store/utils/constants/colors.dart';
 
-class TCarCirculerIcon extends StatelessWidget {
-  const TCarCirculerIcon({
+class TCarTCirculerIcon extends StatelessWidget {
+  const TCarTCirculerIcon({
     super.key,
     this.iconColors,
     required this.onPressed,
