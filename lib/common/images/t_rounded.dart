@@ -3,19 +3,20 @@ import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 
 class TRoundImage extends StatelessWidget {
-  const TRoundImage(
-      {super.key,
-      this.hight,
-      this.widht,
-      required this.imageUrl,
-      this.isNetWorkImage = false,
-      this.applyImageRadius = true,
-      this.border,
-      this.fit = BoxFit.contain,
-      this.padding,
-      this.onPressd,
-      this.borderRadius = TSizes.md,
-      this.backgroundColor = TColors.darkGrey});
+  const TRoundImage({
+    super.key,
+    this.hight,
+    this.widht,
+    required this.imageUrl,
+    this.isNetWorkImage = false,
+    this.applyImageRadius = true,
+    this.border,
+    this.fit = BoxFit.contain,
+    this.padding,
+    this.onPressd,
+    this.borderRadius = TSizes.md,
+    this.backgroundColor = TColors.darkGrey,
+  });
   final double? hight, widht;
   final String imageUrl;
   final bool isNetWorkImage;

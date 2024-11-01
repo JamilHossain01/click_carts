@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:j_store/features/authentication/shop/screens/category/sub_category.dart';
 import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 import 'package:j_store/utils/helpers/helper_functions.dart';
@@ -26,21 +29,25 @@ class TcerticalEmageText extends StatelessWidget {
         padding: const EdgeInsets.only(right: TSizes.spaceBtwItems),
         child: Column(
           children: [
-            Container(
-              height: 56,
-              width: 56,
-              padding: const EdgeInsets.all(TSizes.sm),
-              decoration: BoxDecoration(
-                color: backgrounColor ?? (dark ? TColors.black : TColors.white),
-                shape: BoxShape.circle,
-              ),
-              child: Center(
-                child: Image(
-                  image: AssetImage(
-                    image,
+            GestureDetector(
+              onTap: () => Get.to(() => const SubCategoriesScreen()),
+              child: Container(
+                height: 56,
+                width: 56,
+                padding: const EdgeInsets.all(TSizes.sm),
+                decoration: BoxDecoration(
+                  color:
+                      backgrounColor ?? (dark ? TColors.black : TColors.white),
+                  shape: BoxShape.circle,
+                ),
+                child: Center(
+                  child: Image(
+                    image: AssetImage(
+                      image,
+                    ),
+                    fit: BoxFit.cover,
+                    color: TColors.dark,
                   ),
-                  fit: BoxFit.cover,
-                  color: TColors.dark,
                 ),
               ),
             ),

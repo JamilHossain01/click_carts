@@ -6,6 +6,7 @@ import 'package:j_store/common/styles/widgtes/layout/grid_layout.dart';
 import 'package:j_store/common/styles/widgtes/product.cart/cart/cart_menue_icon.dart';
 import 'package:j_store/common/styles/widgtes/product.cart/t_circuler_icon.dart';
 import 'package:j_store/common/styles/widgtes/product_card/cart/product_cart_horizontal.dart';
+import 'package:j_store/common/styles/widgtes/product_card/prodcut_card_vertical.dart';
 import 'package:j_store/features/authentication/shop/screens/home/home.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 

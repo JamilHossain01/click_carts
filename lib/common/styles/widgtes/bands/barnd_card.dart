@@ -17,7 +17,7 @@ class TBrandCard extends StatelessWidget {
     this.onTap,
   });
   final bool showBorder;
-  final void Function()? onTap;
+  final Function()? onTap;
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);

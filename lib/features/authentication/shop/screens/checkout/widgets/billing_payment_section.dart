@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:j_store/common/images/t_rounded.dart';
-import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/trounded_conatiner.dart';
 import 'package:j_store/common/styles/widgtes/texts/section_heading.dart';
 import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/constants/image_strings.dart';
@@ -16,7 +15,7 @@ class TBillingPaymentSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TSectionHeading(
+        const TSectionHeading(
           title: 'Payment Method',
           buttonTitle: 'Change',
         ),

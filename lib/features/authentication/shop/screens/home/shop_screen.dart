@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:j_store/common/styles/widgtes/appbar/appbar.dart';
 import 'package:j_store/common/styles/widgtes/bands/barnd_card.dart';
 import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/search_container.dart';
@@ -6,6 +7,7 @@ import 'package:j_store/common/styles/widgtes/appbar/customp_appbar.dart';
 import 'package:j_store/common/styles/widgtes/layout/grid_layout.dart';
 import 'package:j_store/common/styles/widgtes/product.cart/cart/cart_menue_icon.dart';
 import 'package:j_store/common/styles/widgtes/texts/section_heading.dart';
+import 'package:j_store/features/authentication/shop/screens/brand/brand_screen.dart';
 import 'package:j_store/features/authentication/shop/screens/widgets/widgets/t_category_tab.dart';
 import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/constants/sizes.dart';
@@ -57,7 +59,10 @@ class ShopScreen extends StatelessWidget {
                       const SizedBox(
                         height: TSizes.spaceBtwItems,
                       ),
-                      const TSectionHeading(title: "Featured Brands"),
+                      TSectionHeading(
+                        title: "Featured Brands",
+                        onPressed: () => Get.to(() => BrandScree()),
+                      ),
                       TGridLayout(
                         itemCount: 4,
                         mainAxisExtent: 70,
