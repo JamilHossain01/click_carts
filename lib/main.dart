@@ -1,25 +1,33 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:j_store/features/authentication/shop/screens/onboarding/onboarding_screen.dart';
-import 'package:j_store/utils/theme/theme.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:get_storage/get_storage.dart';
+import 'package:get/get.dart'; // Needed if using GetX for dependency injection or navigation
 
-void main() {
+import 'package:j_store/app.dart';
+import 'firebase_options.dart';
+
+void main() async {
+  // Ensure that all widgets and bindings are initialized
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Preserve the splash screen until initialization is complete
+  FlutterNativeSplash.preserve(widgetsBinding: WidgetsBinding.instance);
+
+  // Initialize Firebase with options for the current platform
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  // Initialize GetStorage for local storage
+  await GetStorage.init();
+
+  // Register any global dependencies (e.g., Get.put(NetworkManager()); if needed)
+  // Get.put(NetworkManager());
+
+  // Remove the splash screen after all setup is complete
+  FlutterNativeSplash.remove();
+
+  // Run the app
   runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.system,
-      darkTheme: TAppTheme.darkTheme,
-      title: 'Flutter Demo',
-      theme: TAppTheme.lightTheme,
-      home: const OnboardingScreen(),
-    );
-  }
 }

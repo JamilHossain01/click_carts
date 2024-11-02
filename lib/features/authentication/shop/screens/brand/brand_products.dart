@@ -16,7 +16,7 @@ class BrandProducts extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(TSizes.defaultSpace),
-          child: const Column(
+          child: Column(
             children: [
               SizedBox(
                 height: 80,

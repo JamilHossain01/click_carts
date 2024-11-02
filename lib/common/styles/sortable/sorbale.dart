@@ -20,8 +20,8 @@ class TSortableProducts extends StatelessWidget {
           items: ['Shoes', 'Clothes', 'Elctronics']
               .map(
                 (option) => DropdownMenuItem(
-                  child: Text(option),
                   value: option,
+                  child: Text(option),
                 ),
               )
               .toList(),

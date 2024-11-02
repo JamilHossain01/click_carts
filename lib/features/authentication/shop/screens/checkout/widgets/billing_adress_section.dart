@@ -11,7 +11,7 @@ class TBillingAdressSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TSectionHeading(
+        const TSectionHeading(
           title: 'Shipping Adress',
           showActionButton: true,
           buttonTitle: 'Change',
@@ -20,12 +20,12 @@ class TBillingAdressSection extends StatelessWidget {
           'Jamil Hossain',
           style: Theme.of(context).textTheme.titleLarge,
         ),
-        SizedBox(
+        const SizedBox(
           height: TSizes.sm,
         ),
         Row(
           children: [
-            Icon(
+            const Icon(
               Iconsax.call4,
               size: 14,
             ),
@@ -35,12 +35,12 @@ class TBillingAdressSection extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: TSizes.sm / 1.5,
         ),
         Row(
           children: [
-            Icon(
+            const Icon(
               Iconsax.user,
               size: 14,
             ),

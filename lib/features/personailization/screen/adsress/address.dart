@@ -14,9 +14,9 @@ class UserAdressScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        child: const Icon(Iconsax.add),
         backgroundColor: TColors.primary,
         onPressed: () => Get.to(() => const AddNewAddressScreen()),
+        child: const Icon(Iconsax.add),
       ),
       appBar: TAppBar(
         title: Text('Adress', style: Theme.of(context).textTheme.headlineSmall),

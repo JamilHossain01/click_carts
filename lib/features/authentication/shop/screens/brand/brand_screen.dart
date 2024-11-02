@@ -12,13 +12,13 @@ class BrandScree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: TAppBar(
+      appBar: const TAppBar(
         title: Text('Brand'),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            TSectionHeading(
+            const TSectionHeading(
               title: 'Brans',
             ),
             TGridLayout(
@@ -26,7 +26,7 @@ class BrandScree extends StatelessWidget {
               itemCount: 8,
               itemBuilder: (_, index) => TBrandCard(
                 showBorder: true,
-                onTap: () => Get.to(() => BrandProducts()),
+                onTap: () => Get.to(() => const BrandProducts()),
               ),
             )
           ],

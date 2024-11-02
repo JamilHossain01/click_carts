@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:j_store/common/styles/widgtes/bands/bran_show.dart';
 import 'package:j_store/common/styles/widgtes/layout/grid_layout.dart';
-import 'package:j_store/common/styles/widgtes/product_card/cart/product_cart_horizontal.dart';
 import 'package:j_store/common/styles/widgtes/product_card/prodcut_card_vertical.dart';
 import 'package:j_store/common/styles/widgtes/texts/section_heading.dart';
 import 'package:j_store/utils/constants/image_strings.dart';

@@ -21,7 +21,7 @@ class TCouponCode extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(TSizes.sm),
               child: TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                       hintText: 'Have a promo code ? type here',
                       enabledBorder: InputBorder.none,
                       focusedBorder: InputBorder.none,
@@ -38,10 +38,10 @@ class TCouponCode extends StatelessWidget {
                       ? TColors.white.withOpacity(0.5)
                       : TColors.dark.withOpacity(0.5)),
               onPressed: () {},
-              child: Text('Apply'),
+              child: const Text('Apply'),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: TSizes.spaceBtwItems / 1.7,
           )
         ],

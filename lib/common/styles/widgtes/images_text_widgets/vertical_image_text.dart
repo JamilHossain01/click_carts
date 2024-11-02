@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:j_store/features/authentication/shop/screens/category/sub_category.dart';
 import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/constants/sizes.dart';

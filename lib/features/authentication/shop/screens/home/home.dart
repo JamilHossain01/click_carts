@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:j_store/common/styles/widgtes/layout/grid_layout.dart';
-import 'package:j_store/common/styles/widgtes/product_card/cart/product_cart_horizontal.dart';
 import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/curve_edge_conatiner_widgets.dart';
 import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/search_container.dart';
 import 'package:j_store/common/styles/widgtes/images_text_widgets/vertical_image_text.dart';

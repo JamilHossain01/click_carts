@@ -34,11 +34,19 @@ dependencies:
   carousel_slider: ^5.0.0
   flutter_rating_bar: ^4.0.1
   capped_progress_indicator: ^0.0.2
+  #back_end firebase
+  firebase_core:
+  firebase_auth:
+  firebase_storage:
+  firebase_database:
 
 
 
   #--------------- ./ PACKAGES END ------------------#
 
+#  connectivity_plus: any
+#  j_store: any
+connectivity_plus: ^6.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

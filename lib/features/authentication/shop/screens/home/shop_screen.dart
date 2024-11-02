@@ -61,7 +61,7 @@ class ShopScreen extends StatelessWidget {
                       ),
                       TSectionHeading(
                         title: "Featured Brands",
-                        onPressed: () => Get.to(() => BrandScree()),
+                        onPressed: () => Get.to(() => const BrandScree()),
                       ),
                       TGridLayout(
                         itemCount: 4,

@@ -16,7 +16,7 @@ class TRattingStar extends StatelessWidget {
       rating: rating, // Rating value (e.g., 5 stars)
       itemSize: 20, // Size of each star
       unratedColor: TColors.grey, // Color for unrated stars
-      itemBuilder: (_, __) => Icon(
+      itemBuilder: (_, __) => const Icon(
         Iconsax.star1, // Icon for each star
         color: TColors.primary, // Color for rated stars
       ),

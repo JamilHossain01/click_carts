@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:j_store/common/styles/widgtes/appbar/customp_appbar.dart';
 import 'package:j_store/common/styles/widgtes/product.cart/cart/cart_menue_icon.dart';
 import 'package:j_store/features/authentication/shop/screens/cart/cart_screen.dart';

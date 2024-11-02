@@ -23,15 +23,15 @@ class TCartItem extends StatelessWidget {
           hight: 60,
           widht: 60,
           imageUrl: TImages.productImage21,
-          padding: EdgeInsets.all(TSizes.sm),
+          padding: const EdgeInsets.all(TSizes.sm),
           backgroundColor: dark ? TColors.darkerGrey : TColors.light,
         ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            TBraandTitleWithverificationIcon(
+            const TBraandTitleWithverificationIcon(
                 title: 'Nike', icon: Iconsax.verify5),
-            TProductTitleText(
+            const TProductTitleText(
               title: 'Nike Shoes',
               maxLine: 1,
             ),

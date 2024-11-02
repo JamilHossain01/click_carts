@@ -11,7 +11,7 @@ class TRatingandShare extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Row(
+        const Row(
           children: [
             Icon(
               Iconsax.star5,
@@ -23,7 +23,7 @@ class TRatingandShare extends StatelessWidget {
             ),
           ],
         ),
-        IconButton(onPressed: () {}, icon: Icon(Iconsax.share))
+        IconButton(onPressed: () {}, icon: const Icon(Iconsax.share))
       ],
     );
   }

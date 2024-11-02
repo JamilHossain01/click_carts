@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:j_store/common/styles/widgtes/appbar/customp_appbar.dart';
 import 'package:j_store/features/authentication/shop/screens/product_details/product_reviews/widgets/product_overall_screen.dart';
-import 'package:j_store/features/authentication/shop/screens/product_details/product_reviews/widgets/rating_progress_indicator.dart';
 import 'package:j_store/features/authentication/shop/screens/product_details/product_reviews/widgets/ratting_star.dart';
 import 'package:j_store/features/authentication/shop/screens/product_details/product_reviews/widgets/user_review_card.dart';
-import 'package:j_store/utils/constants/colors.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 
 class ProductReviewScreen extends StatelessWidget {
@@ -22,10 +18,10 @@ class ProductReviewScreen extends StatelessWidget {
         ),
         showBackArrrow: true,
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
-          child: const Column(
+          padding: EdgeInsets.all(TSizes.defaultSpace),
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(

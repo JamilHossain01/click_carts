@@ -24,17 +24,17 @@ class TProductQuantityAddandRemoveButton extends StatelessWidget {
           color: dark ? TColors.white : TColors.black,
           backroundColor: dark ? TColors.darkerGrey : TColors.light,
         ),
-        SizedBox(
+        const SizedBox(
           width: TSizes.spaceBtwItems,
         ),
         Text(
           '2',
           style: Theme.of(context).textTheme.titleSmall,
         ),
-        SizedBox(
+        const SizedBox(
           width: TSizes.spaceBtwItems,
         ),
-        TCircularIcon(
+        const TCircularIcon(
           height: 32,
           width: 32,
           icon: Iconsax.add,

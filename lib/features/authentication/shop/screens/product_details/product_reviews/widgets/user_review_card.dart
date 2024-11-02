@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:j_store/common/styles/widgtes/custopms_shapes/container_shape/trounded_conatiner.dart';
 import 'package:j_store/features/authentication/shop/screens/product_details/product_reviews/widgets/ratting_star.dart';
 import 'package:j_store/utils/constants/colors.dart';
@@ -23,10 +22,10 @@ class UserReviewCard extends StatelessWidget {
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   backgroundImage: AssetImage(TImages.userProfileImage1),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: TSizes.spaceBtwItems,
                 ),
                 Text(
@@ -35,33 +34,33 @@ class UserReviewCard extends StatelessWidget {
                 ),
               ],
             ),
-            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert))
+            IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert))
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: TSizes.spaceBtwItems,
         ),
         Row(
           children: [
-            TRattingStar(
+            const TRattingStar(
               rating: 4,
             ),
-            SizedBox(
+            const SizedBox(
               width: TSizes.spaceBtwItems,
             ),
             Text(
               '28 Nov,2024',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
-            SizedBox(
+            const SizedBox(
               height: TSizes.spaceBtwItems,
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: TSizes.spaceBtwItems,
         ),
-        ReadMoreText(
+        const ReadMoreText(
           'Users find the app user-friendly with a great product variety and smooth delivery. Suggestions include faster delivery, more payment options, and improved search accuracy',
           trimLines: 2,
           trimMode: TrimMode.Line,
@@ -77,11 +76,11 @@ class UserReviewCard extends StatelessWidget {
               fontWeight: FontWeight.bold,
               color: TColors.primary),
         ),
-        SizedBox(
+        const SizedBox(
           height: TSizes.defaultSpace,
         ),
         TRoundedContainer(
-          padding: EdgeInsets.all(TSizes.spaceBtwItems),
+          padding: const EdgeInsets.all(TSizes.spaceBtwItems),
           backgroundColor: dark ? TColors.darkerGrey : TColors.grey,
           child: Column(
             children: [
@@ -94,7 +93,7 @@ class UserReviewCard extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodyMedium)
                 ],
               ),
-              ReadMoreText(
+              const ReadMoreText(
                 'Users find the app user-friendly with a great product variety and smooth delivery. Suggestions include faster delivery, more payment options, and improved search accuracy',
                 trimLines: 2,
                 trimMode: TrimMode.Line,

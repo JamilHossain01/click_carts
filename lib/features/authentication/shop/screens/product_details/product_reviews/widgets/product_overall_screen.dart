@@ -19,7 +19,7 @@ class TOverAllProductRatting extends StatelessWidget {
         ),
         const Expanded(
           flex: 7,
-          child: const Column(
+          child: Column(
             children: [
               TRatingProgressIndicator(
                 value: 1,

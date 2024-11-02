@@ -21,14 +21,14 @@ class TProdcutImageSlider extends StatelessWidget {
         color: dark ? TColors.darkGrey : TColors.white,
         child: Stack(
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(TSizes.defaultSpace),
               child: SizedBox(
                 height: 400,
                 child: Image(image: AssetImage(TImages.productImage3)),
               ),
             ),
-            TAppBar(
+            const TAppBar(
               showBackArrrow: true,
               action: [TCartHeartContainer()],
             ),
@@ -42,13 +42,13 @@ class TProdcutImageSlider extends StatelessWidget {
                 child: ListView.separated(
                   scrollDirection: Axis.horizontal,
                   itemCount: 6,
-                  separatorBuilder: (_, __) => SizedBox(
+                  separatorBuilder: (_, __) => const SizedBox(
                     width: TSizes.spaceBtwItems,
                   ),
                   itemBuilder: (_, index) => TRoundImage(
                     backgroundColor: dark ? TColors.dark : TColors.white,
                     border: Border.all(color: TColors.primary),
-                    padding: EdgeInsets.all(TSizes.sm),
+                    padding: const EdgeInsets.all(TSizes.sm),
                     imageUrl: TImages.productImage3,
                     widht: 90,
                     hight: 80, // added height for consistency

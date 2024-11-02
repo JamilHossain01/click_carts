@@ -26,7 +26,7 @@ class TBillingPaymentSection extends StatelessWidget {
                 widht: 60,
                 backgroundColor: dark ? TColors.dark : TColors.white,
                 imageUrl: TImages.paypal),
-            SizedBox(
+            const SizedBox(
               width: TSizes.spaceBtwItems,
             ),
             Text(

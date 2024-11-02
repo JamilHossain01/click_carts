@@ -10,7 +10,6 @@ import 'package:j_store/features/personailization/screen/adsress/address.dart';
 import 'package:j_store/features/personailization/screen/profile/profile_edit.dart';
 import 'package:j_store/utils/constants/sizes.dart';
 // ignore: unused_import
-import 'package:j_store/utils/constants/text_strings.dart';
 
 class SettingScreen extends StatelessWidget {
   const SettingScreen({super.key});
