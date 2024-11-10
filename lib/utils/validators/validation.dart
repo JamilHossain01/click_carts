@@ -1,5 +1,13 @@
+import 'package:get/get.dart';
 
 class TValidator {
+  static String? validateEmtyText(String? fieldName, Value) {
+    if (fieldName == null || fieldName.isEmpty) {
+      return '$fieldName is required.';
+    }
+    return null;
+  }
+
   static String? validateEmail(String? value) {
     if (value == null || value.isEmpty) {
       return 'Email is required.';

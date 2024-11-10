@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/instance_manager.dart';
-import 'package:j_store/features/authentication/controllers.onboarding/onboarding_controller.dart';
+import 'package:j_store/features/authentication/controllers.onboarding/onboarding/onboarding_controller.dart';
 import 'package:j_store/features/authentication/shop/screens/widgets/my_smoth_page_indicator.dart';
 import 'package:j_store/features/authentication/shop/screens/widgets/on_baord_skip.dart';
 import 'package:j_store/features/authentication/shop/screens/widgets/on_board_next_button.dart';
